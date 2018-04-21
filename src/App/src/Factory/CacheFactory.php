@@ -21,6 +21,6 @@ class CacheFactory
 {
     public function __invoke(ContainerInterface $container) : CacheItemPoolInterface
     {
-        return new FilesystemAdapter('', 0, 'data/cache/doctrine');
+        return new FilesystemAdapter('app', 3600, 'data/cache/doctrine');
     }
 }
