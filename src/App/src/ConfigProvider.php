@@ -8,6 +8,8 @@ declare(strict_types=1);
 
 namespace App;
 
+use Zend\ServiceManager\Factory\InvokableFactory;
+
 /**
  * The configuration provider for the App module
  *
@@ -37,6 +39,9 @@ class ConfigProvider
         return [
             'factories'  => [
                 Handler\HomePage::class => Handler\HomePageFactory::class,
+
+                Middleware\XPoweredBy::class      => InvokableFactory::class,
+                Middleware\XClacksOverhead::class => InvokableFactory::class,
             ],
         ];
     }
