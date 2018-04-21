@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 use App\Middleware\XPoweredBy;
 use App\Middleware\XClacksOverhead;
+use Middlewares\Cache;
 use Psr\Container\ContainerInterface;
 use Zend\Expressive\Application;
 use Zend\Expressive\Handler\NotFoundHandler;
@@ -50,6 +51,7 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     $app->pipe(XPoweredBy::class);
     $app->pipe(XClacksOverhead::class);
 
+
     // Register the routing middleware in the middleware pipeline.
     // This middleware registers the Zend\Expressive\Router\RouteResult request attribute.
     $app->pipe(RouteMiddleware::class);
@@ -73,6 +75,7 @@ return function (Application $app, MiddlewareFactory $factory, ContainerInterfac
     // - route-based authentication
     // - route-based validation
     // - etc.
+    $app->pipe(Cache::class);
 
     // Register the dispatch middleware in the middleware pipeline
     $app->pipe(DispatchMiddleware::class);

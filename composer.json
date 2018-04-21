@@ -9,6 +9,8 @@
     },
     "require": {
         "php": "^7.1",
+        "middlewares/cache": "^1.0",
+        "symfony/cache": "^4.0",
         "zendframework/zend-config-aggregator": "^1.1",
         "zendframework/zend-diactoros": "^1.7",
         "zendframework/zend-expressive": "^3.0",

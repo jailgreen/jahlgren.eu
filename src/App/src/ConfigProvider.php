@@ -8,6 +8,9 @@ declare(strict_types=1);
 
 namespace App;
 
+use Middlewares\Cache;
+use Psr\Cache\CacheItemPoolInterface;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 /**
@@ -42,6 +45,9 @@ class ConfigProvider
 
                 Middleware\XPoweredBy::class      => InvokableFactory::class,
                 Middleware\XClacksOverhead::class => InvokableFactory::class,
+
+                CacheItemPoolInterface::class     => Factory\CacheFactory::class,
+                Cache::class                      => Factory\CacheMiddlewareFactory::class,
             ],
         ];
     }
