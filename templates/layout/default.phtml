@@ -1,3 +1,6 @@
+<?php $this->start('css') ?>
+<link rel="stylesheet" href="css/cover.css" />
+<?php $this->end() ?>
 <!doctype html>
 <html lang="fi">
 <head>
@@ -9,16 +12,8 @@
 
   <title><?=$this->e($title)?></title>
 
-  <meta name="msapplication-TileColor" content="#00aba9">
-  <meta name="msapplication-config" content="/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="manifest" href="/manifest.json">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <!-- favicons -->
+  <?= $this->fetch('layout::favicons') ?>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -31,22 +26,20 @@
 
 <body class="text-center">
 
-  <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-      <?php $this->insert('layout::header') ?>
-    </header>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <?= $this->fetch('layout::header') ?>
 
-    <main role="main" class="inner cover">
-      <?= $this->section('content') ?>
-    </main>
+  <main role="main" class="inner cover">
+    <?= $this->section('content') ?>
+  </main>
 
-    <footer class="mastfoot mt-auto">
-      <?php $this->insert('layout::footer') ?>
-    </footer>
-  </div>
+  <footer class="mastfoot mt-auto">
+    <?= $this->fetch('layout::footer') ?>
+  </footer>
+
+</div>
     
 </body>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

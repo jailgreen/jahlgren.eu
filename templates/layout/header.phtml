@@ -1,8 +1,17 @@
-<div class="inner">
-  <h3 class="masthead-brand">Cover</h3>
-  <nav class="nav nav-masthead justify-content-center">
-    <a class="nav-link active" href="#">Home</a>
-    <a class="nav-link" href="#">Features</a>
-    <a class="nav-link" href="#">Contact</a>
-  </nav>
-</div>
+<header class="masthead">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-fade">
+      <div class="container nav-masthead">
+        <a class="navbar-brand h1 mb-0" href="#">jahlgren.eu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+          <div class="navbar-nav justify-content-end">
+            <a class="nav-link active" href="<?=$this->url('home.page')?>">Etusivu <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>

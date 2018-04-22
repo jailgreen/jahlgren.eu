@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 0.3.1 - 2018-04-22
+
+### Added
+
+- Nothing.
+
+### Changed
+
+- Nothing.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- Cache-Control Headers.
+
 ## 0.3.0 - 2018-04-21
 
 ### Added
