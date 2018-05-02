@@ -1,0 +1,4 @@
+site_name: jahlgren.eu
+pages:
+    - Home: index.md
+    - Apod: apod.md
