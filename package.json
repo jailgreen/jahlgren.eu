@@ -8,6 +8,7 @@
     "test": "test"
   },
   "scripts": {
+    "css-compile": "node-sass --include-path node_modules --output-style expanded --source-map true --source-map-contents true --precision 6 resources/scss/core.scss data/build/css/bootstrap.css ",
     "css-lint": "stylelint \"resources/scss/**/*.scss\" --config resources/scss/.stylelintrc.json",
     "css-fix": "stylelint \"resources/scss/**/*.scss\" --config resources/scss/.stylelintrc.json --fix"
   },
@@ -29,6 +30,7 @@
     "tooltip.js": "^1.2.0"
   },
   "devDependencies": {
+    "node-sass": "^4.9.0",
     "npm-run-all": "^4.1.2",
     "stylelint": "^9.2.0",
     "stylelint-config-recommended": "^2.1.0",
