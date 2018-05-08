@@ -12,12 +12,16 @@ Niillä on taipumus suunnata kokeneempia kehittäjiä,
 jotka eivät vaadi yhtä paljon apua sovellusten suunnittelussa ja mieluummin joustavuutta niiden 
 sovellusten rakentamisesta useista irrallisista komponenteista.
 
-## Fusus supponitur ibat
+## Luo uusi projekti
 
-Oraque [cava](http://novi-ubi.org/quid.html), massa saltibus factum quae
-Calydonius *petis duxisses se*. Nec igitur vocabat et refert suis est paelex
-soporem quantaque. Foedari ignibus iugis, sub terruit paratas in passim
-positoque utile, per. Magnum saltem? Et Persea donis arbor ibi votisque caput.
+Helpoin tapa aloittaa [Expressive)n])https://github.com/zendframework/zend-expressive-skeleton)
+käyttö on käyttää luurankokoonpanoa ja asentajaa. Luuranko tarjoaa yleisen rakenteen 
+sovellusten luomiseen ja pyytää sinua valitsemaan reitittimen, riippuvuusruiskutussäiliön, 
+mallintekijän ja virheenkäsittelijän alusta alkaen.
+
+Ensin luodaan uusi projekti, joka käyttää `composer`:inn `create project` -komentoa:
+
+    $ composer create-project zendframework/zend-expressive-skeleton rollup
 
 ## Meliore absentem
 

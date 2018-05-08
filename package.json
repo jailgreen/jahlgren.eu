@@ -1,0 +1,31 @@
+{
+  "name": "jahlgren.eu",
+  "version": "1.0.0",
+  "description": "Rollup your Expressive witj jQuery and Bootstrap",
+  "main": "resoureces/main.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jailgreen/jahlgren.eu.git"
+  },
+  "keywords": [
+    "php",
+    "zend-expressive",
+    "rollup"
+  ],
+  "author": "jailgreen <jukka@jahlgren.eu>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/jailgreen/jahlgren.eu/issues"
+  },
+  "homepage": "https://github.com/jailgreen/jahlgren.eu#readme",
+  "devDependencies": {
+    "rollup": "^0.58.2"
+  }
+}
