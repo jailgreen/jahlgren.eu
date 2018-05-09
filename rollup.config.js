@@ -16,7 +16,7 @@ export default {
     file: 'public/js/main.min.js',
     format: 'es',
     name: 'App',
-    sourcemap: 'inline'
+    sourcemap: 'inline',
   },
   plugins: [
     resolve({
@@ -34,5 +34,8 @@ export default {
       exclude: 'node_modules/**',
     }),
     // uglify(),
+  ],
+  external: [
+    '$'
   ],
 }
