@@ -7,6 +7,17 @@
     Author     : jailgreen jukka@jahlgren.eu
 */
 
+/*
+ * PostCSS styles to test Rollup’s handling of them.
+ */
+
+/* Variables */
+$color-heading: #111;
+$color-text: #444;
+$color-gradient-start: #efefff;
+$color-lightest: #fff;
+$font-family: sans-serif;
+
 $gray-darkest:          #333;
 $gray-dark:             #373a3c;
 $gray:                  #55595c;

@@ -2,21 +2,12 @@
 @license    https://opensource.org/licenses/BSD-3-Clause New BSD License
 @copyright  (c) 2017-2018, jailgreen jukka@jahlgren.eu
 */
-/* 
-    Created on : 9.5.2018, 10:43:46
+/*
+    Created on : 10.5.2018, 14:41:23
     Author     : jailgreen jukka@jahlgren.eu
 */
 
-/*
- * PostCSS styles to test Rollup’s handling of them.
- */
-
-/* Variables */
-$color-heading: #111;
-$color-text: #444;
-$color-gradient-start: #efefff;
-$color-lightest: #fff;
-$font-family: sans-serif;
+@import 'variables';
 
 /* Simple reset. */
 body,* {

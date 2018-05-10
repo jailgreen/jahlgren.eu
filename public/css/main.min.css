@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/*
+@license    https://opensource.org/licenses/BSD-3-Clause New BSD License
+@copyright  (c) 2017-2018, jailgreen jukka@jahlgren.eu
+*/
+/*
+    Created on : 10.5.2018, 14:41:23
+    Author     : jailgreen jukka@jahlgren.eu
+*/
+/*
+@license    https://opensource.org/licenses/BSD-3-Clause New BSD License
+@copyright  (c) 2017-2018, jailgreen jukka@jahlgren.eu
+*/
+/*
+    Created on : 1.5.2018, 17:01:24
+    Author     : jailgreen jukka@jahlgren.eu
+*/
+/*
+ * PostCSS styles to test Rollup’s handling of them.
+ */
+/* Variables */
+/* Simple reset. */
+body, * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 2rem;
+  color: #444;
+  font-family: sans-serif;
+  font-size: 18px;
+  /* Add some CSS3 stuff. */
+  background-image: linear-gradient(to bottom, #efefff 0%, #fff 100%);
+  background-repeat: no-repeat;
+  /* Lobotomize the owls, because they were starting to organize. */
+}
+body * + * {
+  margin-top: 1rem;
+}
+
+h1 {
+  color: #111;
+}
+
+/* Style the JS-generated output. */
+.debug {
+  /* Pseudo-elements, like a goddamn boss. */
+  /* This is a nested approach to BEM-style selectors. */
+}
+.debug::before {
+  content: "Script Output:";
+  display: block;
+  font-family: sans-serif;
+  font-size: 50%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.debug__output {
+  display: block;
+  margin-top: 0.25rem;
+  padding: 1rem;
+  background-color: #fff;
+  /* The color() function works thanks to `postcss-cssnext`. */
+  border: 1px solid color(#444 tint(75%));
+  font-size: 80%;
+}
+
+.credits {
+  color: color(#444 tint(50%));
+  font-size: 75%;
+  text-align: center;
+}
+.credits a {
+  color: inherit;
+}
+
+/*# sourceMappingURL=public/css/main.min.css.map */
