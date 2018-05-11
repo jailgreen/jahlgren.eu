@@ -1,7 +1,9 @@
 import $ from 'jquery';
 
-// Import styles (automatically injected into <head>).
-import '../scss/main.scss';
+/*
+ * // Import styles (automatically injected into <head>).
+ * import '../scss/main.scss';
+ */
 
 // Import a couple modules for testing.
 import { sayHelloTo } from './modules/mod1';

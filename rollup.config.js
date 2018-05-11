@@ -30,16 +30,19 @@ export default {
     }
   },
   plugins: [
+    /*
     postcss({
       plugins: [
         stylelint(),
         simplevars(),
         nested(),
         cssnext({ warnForDuplicates: false }),
-        cssnano(),
+        // cssnano(),
       ],
       extensions: ['.css', '.scss'],
     }),
+       * 
+     */
     resolve(),
     eslint({
       exclude: [
@@ -49,7 +52,7 @@ export default {
     babel({
       exclude: 'node_modules/**',
     }),
-    uglify(),
+    (BUNDLE && uglify()),
   ],
   external: [
     'jquery'

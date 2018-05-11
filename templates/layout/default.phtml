@@ -17,10 +17,6 @@
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <!-- Custom CSS -->
-  <?php $this->start('css') ?>
-    <link rel="stylesheet" href="css/core.min.css" />
-  <?php $this->end() ?>
-
   <?=$this->section('css')?>
 
 </head>
@@ -40,15 +36,13 @@
 
 </div>
     
-</body>
 <!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS, then Custom -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js" integrity="sha256-MsCm0tG3GPebIiIym7SVWJ80wA1z/JI6NbogGcsJ/Fc=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
 <!-- Custom JavaScript -->
-<script src="js/core.min.js"></script>
 <?=$this->section('javascript')?>
 
+</body>
 </html>
