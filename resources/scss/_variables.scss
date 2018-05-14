@@ -12,11 +12,9 @@
  */
 
 /* Variables */
-$color-heading: #111;
-$color-text: #444;
-$color-gradient-start: #efefff;
-$color-lightest: #fff;
-$font-family: sans-serif;
+$color-gradient-start: #efefff !default;
+$color-lightest: #fff !default;
+$font-family: sans-serif !default;
 
 $gray-darkest:          #333;
 $gray-dark:             #373a3c;
@@ -29,4 +27,19 @@ $black:         #000;
 $white:         #fff;
 
 $button-color:  $gray-darkest;
-$link-color:    $black;
+$text-color:            $gray-dark !default;
+$text-color-light:      $gray-light !default;
+$text-color-lighter:    $gray-lighter !default;
+$bg-color:              $body-bg !default;
+
+$link-color:            #ff4f00 !default;
+
+$ui-primary:            #ff4f00 !default;
+$ui-secondary:          #5c2040 !default;
+
+//== Background and colors
+//
+//##
+$header-color: #111 !default;
+$footer-bg:    #0c0c0c !default;
+$footer-color: #a0a0a0 !default;

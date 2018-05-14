@@ -1,17 +1,30 @@
-<header class="masthead">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-fade">
-      <div class="container nav-masthead">
-        <a class="navbar-brand h1 mb-0" href="#">jahlgren.eu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="nav-content">
-          <div class="navbar-nav justify-content-end">
-            <a class="nav-link" href="<?=$this->url('home.page')?>">Etusivu</a>
-            <a class="nav-link" href="<?=$this->url('apod.page')?>">Nasa</a>
-            <a class="nav-link" href="#">Contact</a>
-          </div>
+<header class="mb-auto">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-fade">
+    <div class="container">
+
+      <a class="navbar-brand h1 mb-0" href="<?=$this->url('home.page')?>">
+          <strong>jahlgren.eu</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+        <div class="nav">
+          <a class="nav-item nav-link" href="<?=$this->url('home.page')?>">
+            <i class="fas fa-home"></i> Etusivu
+          </a>
+          <a class="nav-item nav-link" href="<?=$this->url('apod.page')?>">
+            <i class="fas fa-space-shuttle"></i> Nasa
+          </a>
+          <a class="nav-item nav-link disabled" href="#">
+            <i class="fas fa-envelope-square"></i> Contact
+          </a>
         </div>
       </div>
-    </nav>
-  </header>
+        
+    </div>
+
+  </nav>
+</header>

@@ -1,29 +1,24 @@
-import $ from 'jquery';
-
-/*
- * // Import styles (automatically injected into <head>).
- * import '../scss/main.scss';
- */
-
-// Import a couple modules for testing.
-import { sayHelloTo } from './modules/mod1';
-import addArray from './modules/mod2';
-
 /* 
  * @license    https://opensource.org/licenses/BSD-3-Clause New BSD License
  * @copyright  (c) 2017-2018, jailgreen jukka@jahlgren.eu
  */
+// Externals
+import $ from 'jquery';
 
-// Run some functions from our imported modules.
-const result1 = sayHelloTo('Jason');
-const result2 = addArray([1, 2, 3, 4]);
+// Import a couple modules for testing.
+import activate from './modules/menu';
+import { sayHelloTo } from './modules/mod1';
+import addArray from './modules/mod2';
 
-/* 
- * Print the results on the page.
- * const printTarget = document.getElementsByClassName('debug__output')[0];
- * 
- */
-const printTarget = $('.debug__output')[0];
+$(() => {
+  // Set avtive nav-link
+  activate();
+  
+  // Run some functions from our imported modules.
+  const result1 = sayHelloTo('Jason');
+  const result2 = addArray([1, 2, 3, 4]);
 
-printTarget.innerText += `sayHelloTo('Jason') => ${result1}\n\n`;
-printTarget.innerText += `addArray([1, 2, 3, 4]) => ${result2}`;
+  // Print the results on the page.
+  $('.debug__output').text(`sayHelloTo('Jason') => ${result1}\n`);
+  $('.debug__output').append(`addArray([1, 2, 3, 4]) => ${result2}`);
+});
