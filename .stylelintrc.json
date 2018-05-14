@@ -12,6 +12,8 @@
     "block-closing-brace-newline-after": null,
     "block-opening-brace-space-before": null,
     "color-named": "never",
+    "comment-empty-line-before": ["always",
+      { "ignore": "after-comment" }],
     "declaration-block-semicolon-newline-after": "always-multi-line",
     "declaration-block-semicolon-newline-before": "never-multi-line",
     "declaration-block-semicolon-space-after": "always-single-line",
